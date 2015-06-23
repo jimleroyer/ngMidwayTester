@@ -12,7 +12,7 @@
  * @param {Object} [config.mockLocationPaths=true] Whether or not to fake the URL change in the browser address bar
  * @return {Object} An instance of the midway tester
  */
-;var ngMidwayTester = function(moduleName, options) {
+;var ngMidwayTester = function(moduleName, options, preBootstrapCallback) {
 
   options = options || {};
   var doc = options.document || document;
@@ -74,6 +74,10 @@
 
   $terminalElement = angular.element('<div status="{{__view_status}}"></div>');
   $rootElement.append($terminalElement);
+
+  if (preBootstrapCallback) {
+    preBootstrapCallback();
+  }
 
   var $injector = angular.bootstrap($rootElement, ['ng','ngMidway',moduleName]);
   var $rootModule = angular.module(moduleName);

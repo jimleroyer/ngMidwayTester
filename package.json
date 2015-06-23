@@ -1,6 +1,6 @@
 {
-  "name": "ng-midway-tester",
-  "version": "2.0.5",
+  "name": "ng-midway-tester-jlr",
+  "version": "2.0.6",
   "repository": {
     "type": "git",
     "url": "git@github.com:yearofmoo/ngMidwayTester.git"
@@ -29,5 +29,22 @@
     "karma-mocha": "~0.1.0",
     "chai": "~1.8.1",
     "karma-coverage": "~0.1.0"
-  }
+  },
+  "description": "A pure-javascript integration tester for AngularJS that can be run inline with application code.",
+  "bugs": {
+    "url": "https://github.com/yearofmoo/ngMidwayTester/issues"
+  },
+  "homepage": "https://github.com/yearofmoo/ngMidwayTester",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "keywords": [
+    "test",
+    "angularjs",
+    "midway"
+  ],
+  "author": "matsko, patched by jlr",
+  "license": "MIT"
 }
