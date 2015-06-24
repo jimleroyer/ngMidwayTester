@@ -1,3 +1,7 @@
+# Forked Version
+
+This forked version of the ngMidwayTester adds a callback function to the constructor that allows one to inject its own dependencies just prior to the bootstrap of AngularJS. The original version of this library does not allow one to define extra dependencies if necessary, but this simple addition resolves this issue. 
+
 # ngMidwayTester [![Build Status](https://travis-ci.org/yearofmoo/ngMidwayTester.png?branch=master)](https://travis-ci.org/yearofmoo/ngMidwayTester)
 
 A pure-javascript integration tester for AngularJS that can be run inline with application code.  
